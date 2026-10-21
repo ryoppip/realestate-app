@@ -1,0 +1,29 @@
+# 依存関係
+node_modules/
+vendor/
+.venv/
+venv/
+__pycache__/
+
+# ビルド成果物
+dist/
+build/
+.next/
+out/
+
+# 環境変数・機密情報
+.env
+.env.*
+!.env.example
+
+# ログ
+*.log
+npm-debug.log*
+
+# OS・エディタ
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/*
+!.vscode/settings.json
+.idea/
