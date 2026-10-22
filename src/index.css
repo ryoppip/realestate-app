@@ -1,0 +1,154 @@
+/* 全体の基本スタイル */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Hiragino Sans", "Yu Gothic UI", sans-serif;
+  background: #f5f6f8;
+  color: #222;
+}
+
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.loading {
+  text-align: center;
+  margin-top: 80px;
+}
+
+/* ログイン・会員登録画面 */
+.auth-container {
+  max-width: 380px;
+  margin: 80px auto;
+  padding: 32px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.auth-container h1 {
+  margin-top: 0;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.auth-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.9rem;
+}
+
+.auth-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.auth-link {
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.error {
+  margin: 0;
+  color: #dc2626;
+  font-size: 0.9rem;
+}
+
+.success {
+  margin: 0;
+  color: #16a34a;
+  font-size: 0.9rem;
+}
+
+/* 物件一覧画面 */
+.page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-email {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.logout-button {
+  background: #6b7280;
+}
+
+/* 物件カードを画面幅に応じて並べる */
+.property-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  padding: 0;
+  list-style: none;
+}
+
+.property-card {
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.property-card h2 {
+  margin: 0 0 12px;
+  font-size: 1.2rem;
+}
+
+.property-card p {
+  margin: 4px 0;
+}
+
+.rent {
+  color: #2563eb;
+  font-weight: bold;
+}
+
+.area {
+  color: #555;
+}
