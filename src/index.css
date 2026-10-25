@@ -149,6 +149,74 @@ button:disabled {
   font-weight: bold;
 }
 
-.area {
+.area,
+.layout {
   color: #555;
+}
+
+.empty {
+  text-align: center;
+  color: #555;
+}
+
+/* 物件の登録・編集フォーム */
+.panel {
+  margin-bottom: 24px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.panel h2 {
+  margin: 0 0 16px;
+  font-size: 1.1rem;
+}
+
+.property-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+  align-items: end;
+}
+
+/* カード内の編集フォームは縦に並べる */
+.property-card .property-form {
+  grid-template-columns: 1fr;
+}
+
+.property-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.9rem;
+}
+
+.property-form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.property-form .error {
+  grid-column: 1 / -1;
+}
+
+.form-actions,
+.card-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.card-actions {
+  margin-top: 16px;
+}
+
+.secondary-button {
+  background: #6b7280;
+}
+
+.danger-button {
+  background: #dc2626;
 }
