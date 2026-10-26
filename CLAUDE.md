@@ -36,6 +36,11 @@ Supabase 認証付きの不動産管理 Web アプリ（realestate-app）。
 - `.env` に `VITE_SUPABASE_URL` と `VITE_SUPABASE_PUBLISHABLE_KEY` を設定する（`.env.example` を参照）。
 - `.env` は `.gitignore` で除外済み。コミットしないこと。
 
+## デプロイ（Vercel）
+
+- `vercel.json` で全 URL を `index.html` に書き換え、`/properties` などへの直接アクセスやリロードでも 404 にならないようにしている。
+- 環境変数（`VITE_SUPABASE_URL`・`VITE_SUPABASE_PUBLISHABLE_KEY`）は Vercel ダッシュボードで設定する。`vercel.json` には書かない。
+
 ## 主要コマンド
 
 - 依存関係のインストール：`npm install`
