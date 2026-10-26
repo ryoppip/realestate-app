@@ -41,6 +41,11 @@ Supabase 認証付きの不動産管理 Web アプリ（realestate-app）。
 - `vercel.json` で全 URL を `index.html` に書き換え、`/properties` などへの直接アクセスやリロードでも 404 にならないようにしている。
 - 環境変数（`VITE_SUPABASE_URL`・`VITE_SUPABASE_PUBLISHABLE_KEY`）は Vercel ダッシュボードで設定する。`vercel.json` には書かない。
 
+## デプロイ情報
+
+- 本番URL：https://realestate-app-sable-six.vercel.app/
+- Supabaseプロジェクト名：realestate-app
+
 ## 主要コマンド
 
 - 依存関係のインストール：`npm install`
